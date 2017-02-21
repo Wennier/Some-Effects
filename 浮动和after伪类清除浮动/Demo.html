@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix{
+            *zoom: 1;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box{
+
+            border:10px solid blue;
+            opacity: 0.5;
+
+        }
+        .box1{
+            width:100px;
+            height:100px;
+            background-color: black;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box clearfix">
+    <div class="box1"></div>
+</div>
+
+</body>
+</html>

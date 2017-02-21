@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            margin:0;
+            padding:0;
+        }
+        ul li{
+            width:80px;
+            position: relative;
+        }
+        .lis a{
+
+            display: block;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            border:1px solid red;
+            background-color: cornsilk;
+
+        }
+        ul ul{
+            width:80px;
+            border:1px solid black;
+            position: absolute;
+            top:32px;
+            left: 0px;
+            display: none;
+        }
+
+        ul ul li{
+
+            text-align: center;
+            line-height: 30px;
+            background-color: cyan;
+        }
+
+
+    </style>
+    <!-- 希望把某法元素隐藏
+    1.display：none；
+    2.visibility:hidden;
+    3.改变width \ height
+    4.透明度（渐变）
+    5.改变left \ top
+    6.拿一个白色div盖住
+    -->
+</head>
+<body>
+
+<ul>
+    <li id = "lis"class="lis">
+        <a  id="link" href="">微博</a>
+        <ul id="ul1">
+            <li>私信我</li>
+            <li>评论</li>
+            <li>艾特我</li>
+        </ul>
+    </li>
+
+</ul>
+<script>
+    document.getElementById('lis').onmousemove = show;
+    document.getElementById('lis').onmouseout = hide;
+       function show() {
+           document.getElementById('link').style.background = 'blue';
+           document.getElementById('ul1').style.display = 'block';
+    }
+
+        function hide() {
+            document.getElementById('link').style.background = 'cornsilk';
+            document.getElementById('ul1').style.display = 'none';
+
+        }
+
+
+    /*
+    * JS中如何获取元素：
+    * 1.通过id 名称获取元素
+    *     document get element by id ‘link’
+    *     document.getElementById('link')
+    *
+    *
+    *
+    *     事件:鼠标事件，键盘事件，系统事件，表单事件
+    *     onclick
+    *     onmouseover
+    *     onmouseout
+    *     onmousedown
+    *     onmouseup
+    *     onmousemove    鼠标抚摸事件
+    *
+    *
+    *     如何添加事件：
+    *         元素.onmouseover
+    *
+    *     函数： 可以理解为命令，做一些事
+    *       function abc（）{}
+    *
+    *       1.直接调用：abc（）；
+    *       2.事件调用：元素.事件 = 函数名   div.onclick = abc；
+    *       3.
+    *
+    *     测试：
+    *         alert（1）；   带一个确定按钮的警告框
+    *         alert（‘ok’）；ok字符串
+    *
+    * */
+</script>
+
+</body>
+</html>

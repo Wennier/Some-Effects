@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>娱乐界面</title>
+    <style>
+        #warpper{
+            width:1000px;
+            position: absolute;
+            margin:0 50% 0 50%;
+            left:-500px;
+        }
+        li {
+            list-style: none;
+            padding:0;
+            margin: 0;
+        }
+        #title{
+            display: inline-block;
+            width:1000px;
+            height: 50px;
+            font-style: italic;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            left:50px;
+            top:0px;
+        }
+        #stitle{
+            width:1000px;
+            height:45px;
+            border:1px solid #c00036;
+            background-color: #c00036;
+            margin-top: 2px;
+
+        }
+        #stitle .title1 li {
+            width: 60px;
+            float: left;
+            margin-left: 10px;
+            color: white;
+            /*line-height: 45px;*/
+            font-size: 17px;
+
+        }
+        #stitle .title1 li:hover{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #stitle span{
+            margin-right: 0px;
+            display: inline-block;
+            width:240px;
+            border: 1px solid red;
+            font-size: 15px;
+            color: black;
+            font-family: "微软雅黑 Light";
+            text-align: center;
+        }
+        #content1{
+            width:340px;
+            height:530px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        #content1 .c11{
+            border-top: 2px solid black;
+            height:40px;
+        }
+        #content1 .c12{
+            width: 339px;  height:274px;
+        }
+        #content1 .c11 span{
+            float: left;  background-color: #f5f5f5;  padding: 0;
+            display: inline-block;
+            width:67px;
+            line-height:40px;
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            font-size: 17px;
+            font-family: "宋体";
+            text-align: center;
+            font-weight: bold;
+        }
+      
+
+        #content1 .c13{
+            margin-top: 10px;
+            height:40px;
+            border-top: 2px solid black;
+            border-bottom: 1px solid gray;
+            background-color: #f5f5f5;
+        }
+        #content1 .c13 .text{
+           position: absolute;  left:220px;  bottom:20px;  width: 100px;  height:80px;
+            font-size: 14px;
+            color: gray;
+            line-height:30px;word-spacing: 8px;
+
+        }
+        #content1 .c131{
+            width:75px;
+            border-right:1px solid gray;
+            background: white;
+            font-size: 17px;font-family: "宋体";font-weight: bold;line-height:40px;
+        }
+        #content2{
+            width:360px;  height:530px;
+            position: absolute;
+            top:119px;
+            left:360px;
+            /*display: inline-block;*/
+            /*margin-top: 20px;*/
+        }
+        #content2 .c21{
+            height:40px;
+            border-top:2px solid #990000 ;
+            border-bottom: 1px solid gray;
+            font-size: 17px;font-family: "宋体";font-weight: bold;line-height:40px;
+        }
+
+        #content3{
+            width:260px;
+            height:530px;
+            position: absolute;
+            top:119px;
+            left:740px;
+            /*display: inline-block;*/
+            /*top: 20px;*/
+        }
+        #content3 .c31{
+            height:40px;
+            border-top: 2px solid black;
+            border-bottom: 1px solid gray;
+            font-size: 17px;font-family: "宋体";font-weight: bold;line-height:40px;
+        }
+        #content3 .c32{
+            height:345px;
+            border:1px solid black;
+            margin-top: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="warpper">
+        <!--<div><img src="image/yuletubiao.png" style="width: 50px;height: 50px;"></div>-->
+        <div id="title">V V 娱乐</div>
+        <div id="stitle">
+            <ul class="title1">
+                <li>明星</li>
+                <li>电影</li>
+                <li>电视</li>
+                <li>综艺</li>
+                <li>音乐</li>
+                <li>红人</li>
+                <li>视频</li>
+                <li>博客</li>
+                <li>专栏</li>
+                <li>韩娱</li>
+                <li>好莱坞</li>
+                <li>专题</li>
+                <li>图集</li>
+            </ul>
+        </div>
+        <div id="content1">
+            <div class="c11">
+                <span style="background-color:white;border-bottom: none";>热门</span>
+                <span>有料</span>
+                <span>红人</span>
+                <span>专栏</span>
+                <span class="span1">娱乐</span>
+            </div>
+            <div class="c12">
+                <img src="image/15.jpg" style=" width: 339px;  height:264px; margin-top: 10px;" >
+                <div style="height:30px;width: 339px;background-color:rgba(0,0,0,0.5);position:absolute;bottom: 214px;text-align:center;line-height:30px;color: white">陈坤提前一个小时为周迅庆生</div>
+            </div>
+            <div class="c13">
+                <div class="c131">娱乐周刊</div>
+                <img src="image/16.jpg" style="border:1px solid black;margin-top:20px;margin-left:10px;width:180px; height: 150px; ">
+                <div class="text">直击王宝强离婚案现场 马蓉当日下午诉讼</div>
+            </div>
+
+        </div>
+        <div id="content2">
+            <div class="c21">热点关注</div>
+            <div class="c22">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="c23"></div>
+        </div>
+        <div id="content3">
+            <div class="c31">海外娱乐</div>
+            <div class="c32"></div>
+        </div>
+
+    </div>
+</body>
+</html>

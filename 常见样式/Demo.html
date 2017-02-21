@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #div1{
+            width:600px;
+            height:1000px;
+            background-color: green;
+            /*css 注释：颜色单词；16进制（#0cc）；rgb（0,0,0,）*/
+            background-image: url("images/1.jpg");
+            /*默认状态下，背景平铺*/
+            background-repeat: repeat-x;
+            /*no-repeat 不平铺
+              repeat-x  x轴平铺
+              repeat-y  y轴平铺
+              */
+            background-position: center 0;
+            /*
+                背景定位：x y
+                       100px  30px
+                       50%    50%
+                       left|center|right     top|center|bottom
+            */
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+
+</body>
+</html>

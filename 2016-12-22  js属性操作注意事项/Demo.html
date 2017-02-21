@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload=function () {
+        var oBtn1 = document.getElementById("btn1");
+        var oBtn2 = document.getElementById("btn2");
+        var oP = document.getElementById("p");
+        var size = 16;
+
+        oBtn1.onclick = function () {
+            size++;
+            oP.style.fontSize = size +"px";
+        };
+        oBtn2.onclick = function(){
+            size--;
+            oP.style.fontSize = size +"px";
+        };
+    };
+
+</script>
+<body>
+
+    <input id="btn1" type="button" value="+"/>
+    <input id="btn2" type="button" value="-"/>
+<p id="p">中国和越南是友好邻邦，两党总书记2015年实现历史性互访。新年伊始，阮富仲总书记就应邀来友邻家“串门”，
+    成为习近平总书记2017年迎来的第一位党的贵宾，体现了两党两国“同志加兄弟”的特殊情谊。</p>
+
+</body>
+</html>

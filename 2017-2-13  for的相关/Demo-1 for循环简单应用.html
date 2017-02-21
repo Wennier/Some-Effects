@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    li{
+        height:30px;
+        border-bottom:1px solid black;
+    }
+</style>
+<script>
+    window.onload = function(){
+        var oUl= document.getElementById('list');
+        var aLi = oUl.getElementsByTagName('li');
+        var arr = ['今天','明天','后天'];
+        for(var i=0;i<3;i++){
+            aLi[i].onclick = function(){
+                aLi[i].innerHTML = arr[0];
+                alert(1);
+            };
+        }
+    };
+</script>
+<body>
+
+<ul id = "list">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>

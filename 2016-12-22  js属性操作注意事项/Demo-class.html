@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            width:200px;
+            border:10px solid blue;
+            padding:10px;
+            color: yellow;
+            background: red;
+        }
+        .yellow{
+            width:400px;
+            border:20px solid green;
+            padding: 20px;
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+<script>
+    window.onload = function(){
+        var oBtn1 = document.getElementById("btn1");
+        var oBtn2 = document.getElementById("btn2");
+        var oBtn3 = document.getElementById("btn3");
+        var oBtn4 = document.getElementById("btn4");
+        var oP = document.getElementById("p");
+        var num = 16;
+        oBtn1.onclick = function(){
+            oP.className = "red";
+        };
+        oBtn2.onclick = function(){
+            oP.className = "yellow";
+        };
+        oBtn3.onclick = function(){
+            if(num<22) {
+                num++;
+                oP.style.fontSize = num + "px";
+            }
+        };
+        oBtn4.onclick = function(){
+            if (num>12) {
+                num--;
+                oP.style.fontSize = num + "px";
+            }
+        };
+    };
+</script>
+<body>
+
+<input  id = "btn1" type="button" value = "红"/>
+<input id="btn2" type="button" value="黄"/>
+<input  id = "btn3" type="button" value = "+"/>
+<input  id = "btn4" type="button" value = "-"/>
+<p id="p">中国和越南是友好邻邦，两党总书记2015年实现历史性互访。新年伊始，阮富仲总书记就应邀来友邻家“串门”，
+    成为习近平总书记2017年迎来的第一位党的贵宾，体现了两党两国“同志加兄弟”的特殊情谊。</p>
+</body>
+</html>

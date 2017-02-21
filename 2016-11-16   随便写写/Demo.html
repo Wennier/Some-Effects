@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h4 {
+            float: left;
+        }
+        input {
+            margin: 20px 5px;
+            width:50px;
+            border:none;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+
+            <h4>1-100个数相加的结果为:</h4>
+            <form>
+                 <input id="textC" type="text" value=""/>
+            </form>
+
+    </div>
+        <script>
+            var sum = 0;
+            var i;
+            for(i = 0;i <=100;i++){
+                sum = sum+i;
+            }
+            text = sum.toString();
+            document.getElementById("textC").value = text;
+            //        alert("1-100个数相加的结果为"+sum);
+        </script>
+</body>
+</html>

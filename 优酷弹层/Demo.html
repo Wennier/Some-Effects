@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        #box{
+            margin:100px auto;
+            position: relative;
+        }
+        .content{
+            background-color: lightgoldenrodyellow;
+            border:1px solid gray;
+            position: absolute;
+            left:-6px;
+            top:-6px;
+            z-index: 1;
+        }
+        .opacity{
+            background-color: darkgray;
+            position: absolute;
+            opacity: 0.4;
+            right:-4px;
+            bottom:-4px;
+
+        }
+        .content1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div class="content">
+        <p class="content1">《新白发魔女》故地重逢</p>
+    </div>
+    <div class="opacity"></div>
+</div>
+
+</body>
+</html>

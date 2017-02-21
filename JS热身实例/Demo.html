@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul,li{
+            list-style: none;
+            padding:0;
+            margin:0;
+        }
+        span{
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        #but_1{
+            width:100px;
+            height:40px;
+            background: red;
+            color: #fff;
+            border:none;
+        }
+        .div1{
+            width:100px;
+            height:100px;
+            border:4px solid black;
+            margin: 20px 10px;
+        }
+       #div1{
+           width:100%;
+           height:100%;
+           background:rgba(0,0,0,0.3);
+           position: absolute;
+           top:0;
+           left:0;
+           display: none;
+       }
+       #div2{
+           width:300px;
+           height:200px;
+           position: relative;
+           top:50%;
+           left:50%;
+           margin-top:-141px;
+           margin-left: -161px;
+           border:22px solid gray;
+           background: #fff;
+           text-align: center;
+       }
+       .text{
+           font-size:17px;
+           color:black;
+           font-weight: 700;
+           line-height: 34px;
+       }
+        li{
+            float: left;
+        }
+        .bg,.width_ul,.height_ul{
+            margin:20px ;
+        }
+        .li_r,.li_y,.li_b,.li_w_200,.li_w_300,.li_w_400,.li_h_200,.li_h_300,.li_h_400{
+            font-size: 15px;
+            width:36px;
+            height:32px;
+            border:1px solid #717272;
+            line-height: 34px;
+            text-align: center;
+            margin:0 5px 5px 0;
+            background: floralwhite;
+        }
+        #but_2,#but_3{
+            border: none;
+            width:60px;
+            height:30px;
+            background: #020571;
+            color: #fff;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .li_r{
+            background: red;
+            color: #fff;
+        }
+        .li_y{
+            background: yellow;
+            color: #fff;
+        }
+        .li_b{
+            background: deepskyblue;
+            color: #fff;
+        }
+    </style>
+    <script>
+        window.onload = change;
+        function change() {
+            var oBut1 = document.getElementById('but_1');
+            var oDiv1 = document.getElementById('div1');
+            var oDiv0 = document.getElementById('div0');
+            var oRed = document.getElementById('li_r');
+            var oYellow = document.getElementById('li_y');
+            var oBlue = document.getElementById('li_b');
+            var oW_200 = document.getElementById('li_w_200');
+            var oW_300 = document.getElementById('li_w_300');
+            var oW_400 = document.getElementById('li_w_400');
+            var oH_200 = document.getElementById('li_h_200');
+            var oH_300 = document.getElementById('li_h_300');
+            var oH_400 = document.getElementById('li_h_400');
+            var oReturn = document.getElementById('but_2');
+            var oSure = document.getElementById('but_3');
+            oBut1.onclick = show;
+            oRed.onmouseover = chRed;
+            oYellow.onmouseover = chYellow;
+            oBlue.onmouseover = chBlue;
+            oW_200.onmouseover = chW_200;
+            oW_300.onmouseover = chW_300;
+            oW_400.onmouseover = chW_400;
+            oH_200.onmouseover = chH_200;
+            oH_300.onmouseover = chH_300;
+            oH_400.onmouseover = chH_400;
+            oReturn.onclick = reset;
+            oSure.onclick = set;
+            function show() {
+                oDiv1.style.display = 'block';
+            };
+            function chRed() {
+                oDiv0.style.background = 'red';
+            };
+            function chYellow() {
+                oDiv0.style.background = 'yellow';
+            };
+            function chBlue() {
+                oDiv0.style.background = 'deepskyblue';
+            };
+            function chW_200() {
+                oDiv0.style.width = '200px';
+            };
+            function chW_300() {
+                oDiv0.style.width = '300px';
+            };
+            function chW_400() {
+                oDiv0.style.width = '400px';
+            }
+            function chH_200() {
+                oDiv0.style.height = '200px';
+            };
+            function chH_300() {
+                oDiv0.style.height = '300px';
+            };
+            function chH_400() {
+                oDiv0.style.height = '400px';
+            };
+            function reset() {
+                oDiv0.style.width = '100px';
+                oDiv0.style.height = '100px';
+                oDiv0.style.background = '#fff';
+            };
+            function set() {
+                oDiv1.style.display = 'none';
+            };
+        } ;
+    </script>
+</head>
+<body>
+    <span>请为下面的DIV设置样式：</span>
+    <input id="but_1" type="button" value="点击设置"/>
+    <div id = "div0" class="div1"></div>
+    <div id="div1">
+        <div id="div2">
+            <ul class="bg">
+                <li class="text">请选择背景色：</li>
+                <li id= "li_r" class="li_r">红</li>
+                <li id= "li_y" class="li_y">黄</li>
+                <li id= "li_b" class="li_b">蓝</li>
+            </ul>
+            <ul class="width_ul">
+                <li class="text">请选择宽(px)：</li>
+                <li id= "li_w_200" class="li_w_200">200</li>
+                <li id= "li_w_300" class="li_w_300">300</li>
+                <li id= "li_w_400" class="li_w_400">400</li>
+            </ul>
+            <ul class="height_ul">
+                <li class="text">请选择高(px)：</li>
+                <li id= "li_h_200" class="li_h_200">200</li>
+                <li id= "li_h_300" class="li_h_300">300</li>
+                <li id= "li_h_400" class="li_h_400">400</li>
+            </ul>
+            <input id="but_2" type="button" value="恢复"/>
+            <input id="but_3" type="button" value="确定"/>
+        </div>
+    </div>
+</body>
+</html>

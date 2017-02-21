@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        input{
+            outline: none;
+        }
+        #warpper{
+            width:100%;
+            height:400px;
+            background-color:#50a3a2;
+            position: absolute;
+            left:0;
+            top:50%;
+            margin-top: -200px;
+        }
+        input{
+            border:1px solid white;
+            width:220px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: "微软雅黑";
+
+            color: darkgrey;
+            /*font-opacity: 0.5;*/
+            text-align: center;
+            display: block;
+            margin:0 auto 10px auto;
+        }
+        button{
+            width: 250px;
+            background-color: white;
+            border: 0 ;
+            padding: 10px 15px;
+            font-size: 20px;
+            font-family: "微软雅黑";
+            font-weight: 500;
+            border-radius: 5px;
+            color: #0c3;
+        }
+        .content{
+            text-align: center;
+            padding: 70px 0;
+        }
+        .content h1{
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="warpper">
+        <div class="content">
+            <h1>Welcome</h1>
+            <form class="form" action="http://www.baidu.com/" name="get">
+                <input type="text" name="id" placeholder="请输入账号"/>
+                <input type="password" name="password" placeholder="请输入密码"/>
+                <button type="submit" name="submit">登录</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

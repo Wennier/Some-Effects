@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            /*margin:100px auto;*/
+            position: relative;
+        }
+        .box{
+
+            margin:100px auto;
+            position: relative;
+        }
+        .content{
+            background-color: wheat;
+            position: absolute;
+            left:-7px;
+            top:-7px;
+            z-index: 1;
+        }
+        .mark{
+            background-color: gray;
+            position: absolute;
+            right:-7px;
+            bottom:-7px;
+            opacity:0.5;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="content"></div>
+    <div class="mark"></div>
+</div>
+
+</body>
+</html>

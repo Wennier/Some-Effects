@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload = function(){
+        var oUl = document.getElementById('list');
+        var aUl = oUl.getElementsByTagName('ul');
+        var len = aUl.length;
+        var aLi = null;
+        for(var i = 0;i<len;i++){
+             aLi = aUl[i].getElementsByTagName('li');
+            for(var j = 0;j<aLi.length;j++){
+                aLi[j].style.border = '1px solid red';
+            }
+        }
+    };
+</script>
+<body>
+<ul id = 'list'>
+    <li>
+        <h2>我的好友</h2>
+        <ul>
+            <li>梨花</li>
+            <li>苹果</li>
+            <li>草莓</li>
+            <li>橙子</li>
+        </ul>
+    </li>
+
+    <li>
+        <h2>高中同学</h2>
+        <ul>
+            <li>榴莲</li>
+            <li>山竹</li>
+            <li>菠萝</li>
+        </ul>
+    </li>
+
+    <li>
+        <ol>
+            <li>美丽</li>
+            <li>漂亮</li>
+        </ol>
+    </li>
+
+
+
+    <li>
+        <h2>黑名单</h2>
+        <ul>
+            <li>橘子</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+单位 ：像素（px）
+
+width 宽度
+height 高度
+border 边框
+
+	border-left：none（左边框为无）
+      	border-width 边框宽度
+		border-top-width
+		border-bottom-width
+		border-left-width
+		border-right-width
+	border-color 边框颜色
+	border-style 边框样式 solid 实线 dotted 点线  dashed  虚线
+
+颜色  关键字/ rgb / 十六进制
+
+background 背景
+	background-color 背景颜色
+	background-image 背景图片  url（图片路径）
+	background-repeat 背景平铺
+		repeat 平铺
+		no-repeat 不平铺
+	background-position 图片位置
+		关键字
+		x：left：图的左侧和元素的左侧对齐
+		   right：图的右侧和元素的右侧对齐
+		   center：图的中间和元素的中间对齐
+		y：top：图的顶部和元素的顶部对齐
+		    center：图的中间和元素的中间对齐
+		   bottom：图的底部和元素的底部对齐
+                具体值
+		x:正值从左向右移动，负值从右向左移动
+		y:正值从下向上移动，负值从上向下移动 		
+
+		   	

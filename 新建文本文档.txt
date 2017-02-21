@@ -1,0 +1,21 @@
+电子商务网站整站开发
+
+公共样式
+1.
+布局模块
+header
+nav
+search
+
+main
+	section
+	options
+	main_ad
+	
+
+side
+	section_side
+
+footer
+
+结构模块：
